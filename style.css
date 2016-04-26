@@ -1,0 +1,40 @@
+.floating-panel {
+	margin-left:300px;
+	margin-right:300px;
+	margin-top:30px;
+	background-color:#F5F5F5;
+	box-shadow: 2px 2px 5px #7f7f7f;
+	list-style:none;
+}
+
+.panel-piece {
+	display:inline-block;
+	word-wrap:break-word;
+	vertical-align:top;
+}
+
+.panel-piece-text {
+	padding-left:10px;
+	display:inline-block;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size:55px;
+}
+
+h2 {
+	font-family: 'Merriweather', serif;
+	color:#757575;
+	font-size:15px;
+}
+
+.panel-piece p, h1, h2 {
+	margin:0px;
+}
+
+body {
+	/* background-image:url("confectionary.png"); */
+	background-color:#e1e1e1;
+
+}
