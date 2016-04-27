@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Josh DeGrazia</title>
+		<link rel="stylesheet" type="text/css" href="static/styles/style.css" />
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="floating-panel">
+		<div class="floating-panel-bio">
 			<div class="panel-piece">
-				<img src="selfie.jpg" alt="Self Portrait" style="width:240px;height:240px;padding: 10px 10px 5px 10px;"/>
+				<img src="static/images/pictures/profile-selfie.jpg" alt="Self Portrait" style="width:240px;height:240px;padding: 10px 10px 5px 10px;"/>
 			</div>
-			<div class="panel-piece-text">
-				<h1>Josh DeGrazia</h1>
-				<h2>Third-year University of Waterloo Computer Science student</h2>
+			<div class="panel-piece">
+				<div class="panel-piece-text">
+					<h1>Josh DeGrazia</h1>
+					<h2>Third-year University of Waterloo Computer Science student</h2>
+				</div>
+				<div style="margin-top:40px;margin-right:10px">
+					<a href="mailto:joshdegrazia@gmail.com">
+						<div style="margin-left:20px;" class="bio-link">
+							<img style="width:40px;height:40px" src="static/images/logos/email.png" alt="Email"/>
+						</div>
+					</a>
+					<a href="https://github.com/joshdegrazia">
+						<div class="bio-link">
+							<img style="width:40px;height:40px" src="static/images/logos/github.png" alt="GitHub"/>
+						</div>
+					</a>
+					<a href="https://github.com/joshdegrazia">
+						<div  class="bio-link">
+							<img style="width:40px;height:40px" src="static/images/logos/linkedin.png" alt="LinkedIn"/>
+						</div>
+					</a>
+					<a style="float:right;" href="static/documents/resume.pdf">
+						<div class="bio-link">
+							<h3>Resume</h3>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
-		<div class="floating-panel"><li><a href='education.html'>Education</a></li></div>
-		<div class="floating-panel"><li><a href='experience.html'>Work Experience</a></li></div>
+		<a href='education.html'>
+			<div class="floating-panel">
+				<div class="panel-piece-text">
+					<h1>Education</h1>
+				</div>
+			</div>
+		</a>
+		<a href="workexperience.html">
+			<div class="floating-panel">
+				<div class="panel-piece-text">
+					<h1>Work Experience</h1>
+				</div>
+			</div>
+		</a>
+		<a href="aboutme.html">
+			<div class="floating-panel">
+				<div class="panel-piece-text">
+					<h1>About Me</h1>
+				</div>
+			</div>
+		</a>
 	</body>
 </html>
