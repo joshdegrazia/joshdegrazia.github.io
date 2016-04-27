@@ -1,12 +1,28 @@
-.floating-panel-bio, .floating-panel {
+.floating-panel-bio, .floating-panel, .floating-panel-noflex, .floating-panel-redborder {
 	background-color:#F5F5F5;
 	box-shadow: 2px 2px 5px #7f7f7f;
 	list-style:none;
 	width:750px;
 	max-width:750px;
+}
 
+.floating-panel-bio, .floating-panel {
 	display:flex;
 	flex-direction:row;
+}
+
+.floating-panel-noflex {
+	margin:30px auto 0 auto;
+	padding:0 10px;
+	border-bottom:15px solid #a33526;
+}
+
+.floating-panel-redborder {
+	display:flex;
+	flex-direction:row;
+	padding:0 10px;
+	border-bottom:15px solid #a33526;
+	margin:100px auto 0 auto;
 }
 
 .floating-panel-bio {
@@ -38,6 +54,7 @@
 	width:auto;
 	word-wrap:break-word;
 	margin-left:10px;
+	margin-bottom:10px;
 }
 
 .bio-link {
