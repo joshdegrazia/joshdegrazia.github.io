@@ -13,8 +13,12 @@
 
 .floating-panel-noflex {
 	margin:30px auto 0 auto;
-	padding:0 10px;
+	padding:10px;
 	border-bottom:15px solid #a33526;
+}
+
+.floating-panel-noflex a:hover {
+	color:#a33526;
 }
 
 .floating-panel-redborder {
@@ -94,6 +98,11 @@ h2 {
 	font-family: 'Merriweather', serif;
 	color:#757575;
 	font-size:25px;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	font-size:18px;
 }
 
 .panel-piece p, h1, h2 {
