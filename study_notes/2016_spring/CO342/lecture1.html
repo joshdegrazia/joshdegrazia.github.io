@@ -1,0 +1,47 @@
+<!doctype HTML>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../../static/styles/style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="notes-header">
+			<h1>Lecture 1</h1>
+			<h2>Monday, May 2, 2016</h2>
+		</div>
+		<div class="notes-content">
+			<h2>Major topics:</h2>
+			<ol>
+				<li>Connectivity (Menger's Theorem)</li>
+				<li>Planarity (Kuratowski's Theorem)</li>
+				<li>Matchings (Tutte's Theorem, Blossom Algorithm)</li>
+			</ol>
+			<p>Formal definition of a Graph: A <b>graph</b> G is a set of <b>vertices</b> V(G) and a set of <b>edges</b> E(G), which are pairs of vertices.</p>
+			<h2>Connectivity</h2>
+			<p><b>Definition:</b> A graph G is <b>connected</b> if, for every two vertices u and v in V(G), there exists a path from u to v in G.</p>
+			<p>An equivalent notion to connected: There does not exist a proper, nonempty set X of V(G) such that the cut induced by X is empty</p>
+			<p>Rough idea behind this proof:</p>
+			<ul>
+				<li>If there is such a cut, take u in X, and v in G\X. If a path exists, then the graph is not connected.</li>
+				<li>If there is no cut, we have to use the notion of an <b>equivalence class</b>.</li>
+			</ul>
+			<h2>Equivalence Classes</h2>
+			<p><b>~</b> is an equivalence relation if and only if:</p>
+			<ol>
+				<li>Reflexive (ie. for all x, x ~ x)</li>
+				<li>Symmetric (ie. for all x, y, if x ~ y, y ~ x</li>
+				<li>Transitive (ie. for all x, y, z, if x ~ y and y ~ z, then x ~ z</li>
+			</ol>
+			<p>The second part is trivial once we prove that x ~ y = "if there is a path from x to y in G" is an equivalence relation. The equivalence classes under this relation are called the components of G.</p>
+			<h2>Higher Connectivity</h2>
+			<p><b>Definition:</b> A graph G is <b>k-connected</b> if there does not exist a subset X of V(G) with |X| at most k - 1, such that G - X is disconnected.</p>
+			<img style="width:300px;height:auto;" src="images/1-01.png" alt="Example">
+			<p>For instance, if you take the middle 3 vertices here as X, it will make G1 disconnected from G2.</p>
+			<p><b>Alternate Notion:</b> A graph G is <b>k-connected</b> if, for every two vertices u, v in V(G), there exist k vertex-disjoint paths from u to v in G.</p>
+			<h2>Are the two notions the same?</h2>
+			<p><b>The easy direction:</b> Suppose X is a subset of V(G) with |X| less than k - 1, such that G - X is disconnected. Let C<sub>1</sub> and C<sub>2</sub> be two compoents of G - X. Then let u &in; C<sub>1</sub>, v &in; C<sub>2</sub> be vertices. We claim that there does not exist a set P of k vertex-disconnected paths from u to v. To see this, note that every path P<sub>i</sub> &in; P must contain a vertex. Since the paths are disjoint, this implies that |P| &leq; |X| &leq; k - 1. This proves our claim, hence, G is not connected according to our alternate definition.</p>
+			<p><b>What about the other version?</b> We'd have to state that if there are not k vertex-disjoint paths from u to v, then there is a cut X separating u and v of size at most k - 1.</p>
+			<p>In alternate terms, &forall; u, v &in; V(G), the size of a minimum cut separating u and v &geq; the max number of vertex-disjoint paths from u to v.</p>
+		</div>
+	</body>
+</html>
