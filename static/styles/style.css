@@ -2,8 +2,16 @@
 	background-color:#F5F5F5;
 	box-shadow: 2px 2px 5px #7f7f7f;
 	list-style:none;
-	width:750px;
-	max-width:750px;
+}
+
+.panel-piece-text-noinline {
+	width:100%;
+	word-wrap:break-word;
+	margin:10px;
+}
+
+.floating-panel:last-child {
+	margin-bottom:40px;
 }
 
 .floating-panel-bio, .floating-panel {
@@ -30,6 +38,10 @@
 }
 
 .floating-panel-bio {
+	margin:30px auto 0 auto;
+}
+
+.floating-panel-bio:first-child {
 	margin:100px auto 0 auto;
 }
 
@@ -47,7 +59,7 @@
 }
 
 .panel-piece {
-	width:auto;
+	width:100%;
 	white-space:normal;
 	display:inline-block;
 	vertical-align:top;
