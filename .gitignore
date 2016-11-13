@@ -1,4 +1,6 @@
 .DS_Store
+.sass-cache/
 joshdegrazia.github.io.sublime-project
 joshdegrazia.github.io.sublime-workspace
 node_modules/
+npm-debug.log
