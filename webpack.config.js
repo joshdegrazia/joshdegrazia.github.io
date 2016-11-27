@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: "./app/app.js",
   output: {
@@ -16,8 +18,7 @@ module.exports = {
     ]
   },
   resolve: {
-    // TODO: edit this for your local machine
-    root: '/Users/joshdegrazia/code/joshdegrazia/joshdegrazia.github.io/app',
+    root: [path.join(__dirname, './app')],
     extensions: ['', '.js', '.jsx']
   }
 }
