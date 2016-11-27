@@ -16,7 +16,8 @@ module.exports = {
     ]
   },
   resolve: {
-    root: './app',
+    // TODO: edit this for your local machine
+    root: '/Users/joshdegrazia/code/joshdegrazia/joshdegrazia.github.io/app',
     extensions: ['', '.js', '.jsx']
   }
 }
