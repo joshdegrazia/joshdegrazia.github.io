@@ -4,10 +4,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, hashHistory } from "react-router";
 
-import IndexPage from "./app/javascript/pages/index";
-import AboutPage from "./app/javascript/pages/about";
-import ExperiencePage from "./app/javascript/pages/experience";
-import ProjectsPage from "./app/javascript/pages/projects";
+import IndexPage from "javascript/pages/index";
+import AboutPage from "javascript/pages/about";
+import ExperiencePage from "javascript/pages/experience";
+import ProjectsPage from "javascript/pages/projects";
 
 ReactDOM.render(
   <Router history={hashHistory}>

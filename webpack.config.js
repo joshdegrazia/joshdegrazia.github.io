@@ -16,6 +16,7 @@ module.exports = {
     ]
   },
   resolve: {
+    root: './app',
     extensions: ['', '.js', '.jsx']
   }
 }
