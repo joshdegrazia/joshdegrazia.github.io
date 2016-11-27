@@ -23,6 +23,9 @@ module.exports = {
       }
     ]
   },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, "./app")]
+  },
   resolve: {
     root: [path.join(__dirname, './app')],
     extensions: ['', '.js', '.jsx', '.scss']
