@@ -1,7 +1,12 @@
 @import 'styles/colors';
 
-body {
-  background-color: $flat-grey;
+body { background-color: $flat-grey; }
+div { font-family: 'Merriweather', serif; }
+.title { font-family: 'Josefin Sans', sans-serif; }
+
+.hcenter { 
+  display: table;
+  margin: 0 auto; 
 }
 
 @mixin common-transition($attr) {
