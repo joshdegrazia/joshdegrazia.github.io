@@ -1,0 +1,21 @@
+@import 'styles/colors';
+@import 'styles/common';
+
+.external-links-panel {
+  padding: 20px;
+
+  .link {
+    @include common-transition(color);
+
+    color: $dark-grey;
+    font-size: 30px;
+    margin-right: 20px;
+    text-decoration: none;
+
+    &:hover {
+      @include common-transition(color);
+
+      color: $off-white;
+    }
+  }
+}
