@@ -1,0 +1,13 @@
+@import 'styles/colors';
+
+.nav-header {
+  background-color: $flat-grey;
+
+  .local-links {
+    list-style: none;
+
+    .header-link {
+      display: inline-block;
+    }
+  }
+}

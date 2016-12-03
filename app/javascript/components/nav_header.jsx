@@ -1,6 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router';
+
+import 'styles/components/nav-header';
 
 export default React.createClass({
   render: function() {
