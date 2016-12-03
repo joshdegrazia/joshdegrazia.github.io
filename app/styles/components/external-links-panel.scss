@@ -3,6 +3,7 @@
 
 .external-links-panel {
   padding: 20px;
+  display: table;
 
   .link {
     @include common-transition(color);
@@ -11,6 +12,8 @@
     font-size: 30px;
     margin-right: 20px;
     text-decoration: none;
+
+    &:last-child { margin-right: 0px; }
 
     &:hover {
       @include common-transition(color);
