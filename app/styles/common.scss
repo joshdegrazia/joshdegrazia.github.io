@@ -3,3 +3,8 @@
 body {
   background-color: $flat-grey;
 }
+
+@mixin common-transition($attr) {
+  -webkit-transition: 0.15s $attr;
+  transition: 0.15s $attr;
+}
