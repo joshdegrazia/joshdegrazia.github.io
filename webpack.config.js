@@ -22,9 +22,14 @@ module.exports = {
         loaders: ['style', 'css', 'sass']
       },
       {
-        test: /\.(jpg|png|pdf)$/,
+        test: /\.pdf$/,
+        loader: 'url-loader',
+        include: path.join(__dirname, './app/documents')
+      },
+      {
+        test: /\.(jpg|png)$/,
         loader: 'file-loader',
-        include: [path.join(__dirname, './app/images'), path.join(__dirname, './app/documents')]
+        include: path.join(__dirname, './app/images')
       }
     ]
   },

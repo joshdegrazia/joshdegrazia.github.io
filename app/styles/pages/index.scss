@@ -1,14 +1,18 @@
 @import 'styles/common';
 @import 'styles/colors';
 
-body { position: relative; }
+body { 
+  position: relative;
+  background-image: url('../../images/toronto_skyline.jpg');
+  background-size: 100% 100%;
+}
 
 .index-root {
   width: 800px;
   padding: 40px;
   vertical-align: middle;
-
-  background-color: $background-black;
+  
+  background-color: rgba(41, 41, 41, 0.95); // background-black
   color: $off-white;
 
   position: absolute;
