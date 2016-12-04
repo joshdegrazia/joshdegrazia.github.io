@@ -8,6 +8,7 @@ import IndexPage from "javascript/pages/index";
 import AboutPage from "javascript/pages/about";
 import ExperiencePage from "javascript/pages/experience";
 import ProjectsPage from "javascript/pages/projects";
+import EducationPage from "javascript/pages/education";
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -15,5 +16,6 @@ ReactDOM.render(
     <Route path="/about" component={AboutPage}/>
     <Route path="/experience" component={ExperiencePage}/>
     <Route path="/projects" component={ProjectsPage}/>
+    <Route path="/education" component={EducationPage}/>
   </Router>, document.body
 );
