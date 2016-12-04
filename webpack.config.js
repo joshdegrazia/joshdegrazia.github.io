@@ -18,8 +18,13 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        exclude: /node_modules/,
+        include: path.join(__dirname, './app/styles'),
         loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.(jpg|png|pdf)$/,
+        loader: 'file-loader',
+        include: [path.join(__dirname, './app/images'), path.join(__dirname, './app/documents')]
       }
     ]
   },
@@ -28,7 +33,7 @@ module.exports = {
   },
   resolve: {
     root: [path.join(__dirname, './app')],
-    extensions: ['', '.js', '.jsx', '.scss']
+    extensions: ['', '.js', '.jsx', '.scss', '.jpg', '.png']
   },
   plugins: [new ExtractTextWebpackPlugin("style.css", {allChunks: false})]
 }
