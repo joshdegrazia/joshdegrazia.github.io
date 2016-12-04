@@ -15,15 +15,17 @@ export default React.createClass({
     var introText = `I'm a fourth-year University of Waterloo student studying Computer Science.`;
 
     return (
-      <div className='hcenter index-root'>
-        <div className='header-panel'>
-          <CircleImageContainer src={RedSelfie}/>
-          <div className='title-container'>
-            <div className='title'>Josh DeGrazia</div>
-            <ExternalLinksPanel/>
+      <div className='index-root'>
+        <div className='hcenter index-content'>
+          <div className='header-panel'>
+            <CircleImageContainer src={RedSelfie}/>
+            <div className='title-container'>
+              <div className='title'>Josh DeGrazia</div>
+              <ExternalLinksPanel/>
+            </div>
           </div>
+          <div className='intro-description'>{introText}</div>
         </div>
-        <div className='intro-description'>{introText}</div>
       </div>
     );
   }
