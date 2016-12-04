@@ -8,7 +8,7 @@ import RedSelfie from 'images/red_selfie.jpg';
 import 'styles/common';
 import 'styles/pages/index';
 
-export default React.createClass({
+class IndexPage extends React.Component {
   render: function() {
     // the jsx syntax for sublime doesn't play nice with quote characters directly
     // inside divs, so i'm making most text in variables to avoid that
@@ -43,4 +43,6 @@ export default React.createClass({
       </div>
     );
   }
-});
+}
+
+export default IndexPage;

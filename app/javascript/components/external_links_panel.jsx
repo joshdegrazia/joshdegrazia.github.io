@@ -1,12 +1,11 @@
 import React from 'react';
-
 import resume from 'documents/resume.pdf';
 
 import 'styles/common'
 import 'styles/components/external-links-panel';
 
-export default React.createClass({
-  render: function() {
+class ExternalLinksPanel extends React.Component {
+  render() {
     return (
       <div className='external-links-panel'>
         <a className='link fa fa-envelope' href='mailto:joshdegrazia@gmail.com'/>
@@ -17,4 +16,6 @@ export default React.createClass({
       </div>
     )
   }
-});
+}
+
+export default ExternalLinksPanel;

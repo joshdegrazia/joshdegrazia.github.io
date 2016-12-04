@@ -3,8 +3,8 @@ import { Link } from 'react-router';
 
 import 'styles/components/nav-header';
 
-export default React.createClass({
-  render: function() {
+class NavHeader extends React.Component {
+  render() {
     return (
       <div className='nav-header'>
         <ul className='local-links'>
@@ -24,4 +24,6 @@ export default React.createClass({
       </div>
     );
   }
-});
+}
+
+export default NavHeader;

@@ -2,8 +2,8 @@ import React from 'react';
 
 import NavHeader from 'javascript/components/nav_header';
 
-export default React.createClass({
-  render: function() {
+class ProjectsPage extends React.Component {
+  render() {
     return (
       <div className='root'>
         <NavHeader/>
@@ -11,4 +11,6 @@ export default React.createClass({
       </div>
     );
   }
-});
+}
+
+export default ProjectsPage;
