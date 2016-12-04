@@ -2,7 +2,12 @@
 
 body { background-color: $flat-grey; }
 div { font-family: 'Merriweather', serif; }
-.title { font-family: 'Josefin Sans', sans-serif; }
+
+.title { 
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .hcenter { 
   display: table;
