@@ -9,7 +9,7 @@ import 'styles/common';
 import 'styles/pages/index';
 
 class IndexPage extends React.Component {
-  render: function() {
+  render() {
     // the jsx syntax for sublime doesn't play nice with quote characters directly
     // inside divs, so i'm making most text in variables to avoid that
 
