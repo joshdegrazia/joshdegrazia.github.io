@@ -4,9 +4,11 @@ import 'styles/components/circle-image-container';
 
 class CircleImageContainer extends React.Component {
   render() {
+    var imageStyle = { height: this.props.size, width: this.props.size }
+
     return (
       <div className='circle-image-container'>
-        <img src={this.props.src}/>
+        <img src={this.props.src} style={imageStyle}/>
       </div>
     );
   }

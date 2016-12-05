@@ -21,7 +21,7 @@ class IndexPage extends React.Component {
       <div className='index-root'>
         <div className='hcenter index-content'>
           <div className='header-panel'>
-            <CircleImageContainer src={RedSelfie}/>
+            <CircleImageContainer src={RedSelfie} size={200}/>
             <div className='title-container'>
               <div className='title'>Josh DeGrazia</div>
               <div className='hcenter subtitle'>Student & Software Developer</div>
