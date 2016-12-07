@@ -18,3 +18,30 @@ div { font-family: 'Merriweather', serif; }
   -webkit-transition: 0.15s $attr;
   transition: 0.15s $attr;
 }
+
+.root { 
+  display: flex; 
+
+  > * { 
+    min-height: 100%; 
+    overflow: auto;
+  }
+}
+
+.right-pane { flex: 1; }
+
+.page-link {
+  @include common-transition(border-right);
+  @include common-transition(color);
+
+  border-right: 5px solid $dark-grey;
+  color: $background-black;
+  background-color: $off-white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  display: block;
+
+  .fa { margin-right: 15px; }
+}
