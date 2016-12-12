@@ -1,13 +1,15 @@
 import React from 'react';
 
-import NavHeader from 'javascript/components/nav_header';
+import Sidebar from 'javascript/components/sidebar';
+
+import 'styles/common';
 
 class EducationPage extends React.Component {
   render() {
     return (
       <div className='root'>
-        <NavHeader/>
-        <div>This is the Education page.</div>
+        <Sidebar currentPage='education'/>
+        <div className='right-pane'>This is the Education page.</div>
       </div>
     );
   }
