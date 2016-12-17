@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router';
-import ExternalLinksPanel from 'javascript/components/external_links_panel';
+
+import ExternalLinksPanel   from 'javascript/components/external_links_panel';
 import CircleImageContainer from 'javascript/components/circle_image_container';
+import LocalLink            from 'javascript/components/local_link';
 
 import RedSelfie from 'images/red_selfie.jpg';
 
@@ -30,13 +31,13 @@ class IndexPage extends React.Component {
           </div>
           <div className='intro-description'>{introText}</div>
           <div>
-            <div>
-              <Link to='/education' className='page-link education'><div className='fa fa-book'/>Education</Link>
-              <Link to='/experience' className='page-link experience'><div className='fa fa-briefcase'/>Work Experience</Link>
+            <div className='local-links-panel'>
+              <LocalLink linkTo='/education' icon='fa-book' text='Education'/>
+              <LocalLink linkTo='/experience' icon='fa-briefcase' text='Work Experience'/>
             </div>
-            <div>
-              <Link to='/projects' className='page-link projects'><div className='fa fa-paint-brush'/>Projects</Link>
-              <Link to='/about' className='page-link about'><div className='fa fa-user'/>About Me</Link>
+            <div className='local-links-panel'>
+              <LocalLink linkTo='/projects' icon='fa-paint-brush' text='Projects'/>
+              <LocalLink linkTo='/about' icon='fa-user' text='About Me'/>
             </div>
           </div>
         </div>

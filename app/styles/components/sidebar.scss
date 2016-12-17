@@ -6,7 +6,6 @@
   display: inline-block;
   background-color: $background-black;
   padding: 30px;
-  height: 100%;
 
   .circle-image-container { 
     @extend .hcenter;
@@ -28,5 +27,9 @@
 
   .subtitle {
     color: $off-white;
+  }
+
+  .local-link {
+    margin: 10px 20px;
   }
 }
