@@ -1,0 +1,28 @@
+@import 'styles/common';
+@import 'styles/colors';
+
+.experience-page {
+  padding: 30px;
+  width: 100%;
+  
+  .title-row { margin-bottom: 10px; }
+
+  .company-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    color: $off-white;
+    background-color: $background-black;
+
+    .company-name { 
+      @include common-transition(color);
+      
+      color: $off-white;
+      font-size: 30px; 
+      text-decoration: none;
+      
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+  } 
+}

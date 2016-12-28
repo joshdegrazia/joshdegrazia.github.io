@@ -1,0 +1,35 @@
+@import 'styles/common';
+@import 'styles/colors';
+
+.sidebar {
+  flex: 0 0 30%;
+  display: inline-block;
+  background-color: $background-black;
+  padding: 30px;
+
+  .circle-image-container { 
+    @extend .hcenter;
+    margin-bottom: 20px;
+  }
+
+  .external-links-panel { 
+    border-bottom: 1px solid $dark-grey;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .title.title-text { 
+    color: $off-white;
+    text-decoration: none;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: $off-white;
+  }
+
+  .local-link {
+    margin: 10px 20px;
+  }
+}
