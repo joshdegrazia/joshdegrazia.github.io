@@ -1,6 +1,8 @@
 import React from 'react';
 import Sidebar from 'javascript/components/sidebar';
+
 import 'styles/common';
+import 'styles/pages/education';
 
 var data = {
   'terms': [
@@ -201,11 +203,23 @@ class EducationPage extends React.Component {
     )
   }
 
+  renderHeader() {
+    return (
+      <div className='education-header'>
+        I'm a student in my fourth year studying at the University of
+        Waterloo, located in Waterloo, Ontario, Canada. My major is
+        Computer Science, taken with a minor in Combinatorics & Optimization
+        as well as a Business option.
+      </div>
+    );
+  }
+
   renderTerms() {
-    return data.terms.map(
+    return data.terms.reverse().map(
       (term) => (
-        <div className='term-container'>
-          <div className='term-name'>{term.season} {term.year}</div>
+        <div className='school-term-container'>
+          <div className='title term-name'>{term.season} {term.year}</div>
+          <div className='horizontal-line'/>
           <div className='courses'>
             {this.renderCourses(term)}
           </div>
@@ -219,6 +233,7 @@ class EducationPage extends React.Component {
       <div className='root'>
         <Sidebar currentPage='education'/>
         <div className='education-page'>
+          {this.renderHeader()}
           {this.renderTerms()}
         </div>
       </div>
