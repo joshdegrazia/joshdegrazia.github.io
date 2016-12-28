@@ -6,12 +6,6 @@
 
   display: block;
   padding: 10px 30px 10px 10px;
-  
-  color: $background-black;
-  background-color: $off-white;
-  
-  border-right: 5px solid $background-black;
-  
 
   .link-text {
     display: inline-block;
@@ -24,9 +18,13 @@
     .fa { margin-right: 15px; }  
   }
   
-  &:hover {
-    @include common-transition(background-color);
+  color: $off-white;
+  background-color: none;
 
-    background-color: $dark-grey;
+  transition: color 0.2s, background-color 0.2s;
+  &:hover {
+    color: $background-black;
+    background-color: $off-white;
+    transition: color 0.2s, background-color 0.2s;
   }
 }
