@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div className='sidebar'>
-        <CircleImageContainer className='hcenter' src={RedSelfie} size={200}/>
+        <CircleImageContainer className='hcenter' src={RedSelfie} size={200} href='/'/>
         <Link to='/' className='hcenter title title-text'>Josh DeGrazia</Link>
         <div className='hcenter subtitle'>Student & Software Developer</div>
         <ExternalLinksPanel/>
