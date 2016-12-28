@@ -7,7 +7,7 @@
   display: inline-block;
   
   color: $background-black;
-  background-color: rgba(225, 225, 225, 0.5);
+  background-color: rgba(225, 225, 225, 0.7);
   border: 1px solid $off-white;
 
   border-radius: 5px;
@@ -18,13 +18,13 @@
 
   .devicons { 
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .label-text { display: inline-block; }
 
   &:hover {
     @include common-transition(background-color);
-    background-color: rgba(225, 225, 225, 0.8);
+    background-color: rgba(225, 225, 225, 0.9);
   }
 }

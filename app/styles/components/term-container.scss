@@ -1,0 +1,29 @@
+@import 'styles/colors';
+
+.term-container {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $background-black;
+  color: $off-white;
+  padding: 5px;
+
+  transition: color 0.2s, background-color 0.2s;
+  &:hover {
+    cursor: pointer;
+    color: $background-black;
+    background-color: $off-white;
+
+    transition: color 0.2s, background-color 0.2s;
+  }
+
+  &.open {
+    color: $background-black;
+    background-color: $off-white;
+  }
+  
+  margin-top: 15px;
+  .fa { float: right; }
+  &:first-child { margin-top: 0px; }
+  .term-header { font-size: 25px; }
+  .term-description { margin-top: 10px; }
+}
