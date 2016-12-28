@@ -9,7 +9,7 @@ class CircleImageContainer extends React.Component {
 
     return (
       <Link to={this.props.href} className='circle-image-container'>
-        <img src={this.props.src} style={imageStyle}/>
+        <img src='b58099dfb83f9b89395fd6546990cade.jpg' style={imageStyle}/>
       </Link>
     );
   }
