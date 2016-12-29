@@ -5,7 +5,7 @@
   box-sizing: border-box;
   background-color: $background-black;
   color: $off-white;
-  padding: 5px;
+  padding: 10px;
 
   transition: color 0.2s, background-color 0.2s;
   &:hover {
@@ -19,11 +19,10 @@
   &.open {
     color: $background-black;
     background-color: $off-white;
+    margin-bottom: 15px;
   }
   
-  margin-top: 15px;
   .fa { float: right; }
-  &:first-child { margin-top: 0px; }
   .term-header { font-size: 25px; }
   .term-description { margin-top: 10px; }
 }

@@ -66,22 +66,8 @@
   .local-links-panel {
     display: flex;
 
-    &:nth-child(2) {
-      margin-top: 10px;
-    }
-
     .local-link {
-      width: 40%;
-
-      &:first-child {
-        margin-left: 10px;
-        margin-right: auto;
-      }
-
-      &:nth-child(2) {
-        margin-left: auto;
-        margin-right: 10px;
-      }
+      width: 50%;
     }
   }
 }

@@ -75,7 +75,9 @@ class ExperiencePage extends React.Component {
         <div className='company-container'>
           <div className='title-bar'>
             <div className='title-row'>
-              <a className='company-name title' href={company.link}>{company.name}</a>
+              <div className='company-name title'>
+                {company.name}<a className='fa fa-external-link' href={company.link}/>
+              </div>
             </div>
             <div className='title-row'>
               {this.renderCompanyTechnologies(company.technologies)}

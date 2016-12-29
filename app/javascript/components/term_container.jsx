@@ -15,7 +15,7 @@ class TermContainer extends React.Component {
 
   renderTermHeader() {
     if (this.state.open) {
-      var chevronClasses = 'fa fa-chevron-circle-down';
+      var chevronClasses = 'fa fa-chevron-up';
     } else {
       var chevronClasses = 'fa fa-chevron-down';
     }

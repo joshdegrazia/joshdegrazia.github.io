@@ -14,15 +14,24 @@
     background-color: $background-black;
 
     .company-name { 
-      @include common-transition(color);
-      
       color: $off-white;
       font-size: 30px; 
       text-decoration: none;
-      
+    }
+
+    .fa-external-link {
+      transition: color 0.2s;
+      float: right;
+      display: inline-block;
+      text-decoration: none;
+      color: $dark-grey;
+
       &:hover {
-        color: $dark-grey;
+        transition: color 0.2s;
+        color: $off-white;
       }
     }
+
+    .company-description { margin-bottom: 15px; }
   } 
 }
