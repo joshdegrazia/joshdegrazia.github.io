@@ -1,0 +1,37 @@
+@import 'styles/colors';
+
+.projects-page {
+  width: 100%;
+  padding: 20px;
+
+  .project-container {
+    background-color: $background-black;
+    color: $off-white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    &:first-child { margin-top: 0px; }
+    
+    .project-name {
+      font-size: 25px;
+      margin-bottom: 10px;
+
+      .fa-github {
+        text-decoration: none;
+        float: right;
+        color: $dark-grey;
+        font-size: 40px;
+
+        transition: color 0.2s;
+        &:hover {
+          color: $off-white;
+          transition: color 0.2s;
+
+          cursor: pointer;
+        }
+      }
+    }
+    .project-technologies { margin-bottom: 10px;}
+  }
+}
