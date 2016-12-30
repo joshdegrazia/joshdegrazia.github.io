@@ -46,7 +46,7 @@ var data = {
       'technologies' : [
         { 'icon': 'devicons-react', 'text': 'React' },
         { 'icon': 'devicons-coffeescript', 'text': 'Coffeescript' },
-        { 'icon': 'devicons-rubyonrails', 'text': 'Ruby on Rails' },
+        { 'icon': 'devicons-ruby_on_rails', 'text': 'Ruby on Rails' },
         { 'icon': 'devicons-sass', 'text': 'Sass' }
       ],
       'terms' : [
@@ -60,7 +60,6 @@ var data = {
 }
 
 class ExperiencePage extends React.Component {
-  
   renderCompanyTechnologies(technologies) {
     return technologies.map(
       (technology) => (
