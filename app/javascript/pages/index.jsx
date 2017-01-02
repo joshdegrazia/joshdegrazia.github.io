@@ -14,9 +14,9 @@ class IndexPage extends React.Component {
     // the jsx syntax for sublime doesn't play nice with quote characters directly
     // inside divs, so i'm making most text in variables to avoid that
 
-    var introText = `I'm a fourth-year University of Waterloo student studying Computer Science.
-                     I seek to develop myself in the field and learn as much about the industry
-                     as I can before I graduate.`;
+    var introText = `I'm a student at the University of Waterloo working to complete my fourth year
+                     studying Computer Science. I am seeking internship opportunities and have work experience
+                     in Python, ASP.Net, Ruby on Rails, and React.`;
 
     return (
       <div className='index-root'>
