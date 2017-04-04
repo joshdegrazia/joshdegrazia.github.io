@@ -27518,6 +27518,16 @@
 	                           coverage and attendance to PDF, as well as working with another employee to reimplement \
 	                           the client infrastructure to allow for individual schools to be identified in our system.'
 	    }]
+	  }, {
+	    'name': 'Amazon',
+	    'logo': '[amazon-logo]',
+	    'link': 'http://www.amazon.com',
+	    'description': '',
+	    'technologies': [],
+	    'terms': [{
+	      'name': 'Summer 2017',
+	      'description': 'During Summer 2017, I will be heading to Vancouver to join Amazon for a three-month internship.'
+	    }]
 	  }]
 	};
 
