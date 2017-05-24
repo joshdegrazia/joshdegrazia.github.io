@@ -98,7 +98,7 @@ class ExperiencePage extends React.Component {
   }
 
   renderWorkTerms() {
-    return data.companies.map(
+    return data.companies.reverse().map(
       (company) => (
         <div className='company-container'>
           <div className='title-bar'>
