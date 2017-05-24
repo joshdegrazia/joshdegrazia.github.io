@@ -81,7 +81,7 @@ var data = {
       'terms' : [
         {
           'name' : 'Summer 2017',
-          'description' : 'During Summer 2017, I will be heading to Vancouver to join Amazon for a three-month internship.',
+          'description' : 'During Summer 2017, I will be heading to Vancouver to join Amazon for a three-month internship on their People Tech team.',
         }
       ]
     }
@@ -98,7 +98,7 @@ class ExperiencePage extends React.Component {
   }
 
   renderWorkTerms() {
-    return data.companies.reverse().map(
+    return data.companies.map(
       (company) => (
         <div className='company-container'>
           <div className='title-bar'>
