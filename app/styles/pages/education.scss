@@ -15,14 +15,6 @@
     &:first-child { margin-top: 0px; }
   }
 
-  .horizontal-line {
-    width: 100%;
-    box-sizing: border-box;
-    height: 1px;
-    border-bottom: solid 1px $dark-grey;
-    margin: 10px 0px;
-  }
-
   .school-term-container {
     .term-name {
       font-size: 25px;
