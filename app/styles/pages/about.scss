@@ -1,0 +1,22 @@
+@import 'styles/colors';
+
+.about-page {
+  width: 100%;
+  padding: 20px;
+
+  .interest-header, .interest-container {
+    width: 100%;
+    box-sizing: border-box;
+    color: $off-white;
+    background-color: $background-black;
+    padding: 20px;
+
+    margin-top: 20px;
+    &:first-child { margin-top: 0px; }
+  }
+
+  .interest-name {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
