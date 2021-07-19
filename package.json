@@ -1,41 +1,38 @@
 {
   "name": "joshdegrazia.github.io",
-  "version": "1.0.0",
-  "description": "My personal webpage.",
-  "main": "index.js",
-  "scripts": {
-    "webpack-server": "webpack-dev-server",
-    "sass": "node-sass --watch -w app/styles -o bin/",
-    "start": "npm run webpack-server && npm run sass"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshdegrazia/joshdegrazia.github.io.git"
-  },
-  "author": "Joshua DeGrazia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joshdegrazia/joshdegrazia.github.io/issues"
-  },
-  "homepage": "https://github.com/joshdegrazia/joshdegrazia.github.io#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
   },
-  "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "css-loader": "^0.26.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "node-libs-browser": "^1.0.0",
-    "node-sass": "^3.13.0",
-    "nodemon": "^1.11.0",
-    "react-router": "^3.0.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
