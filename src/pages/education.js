@@ -161,7 +161,7 @@ var data = {
         }
       ]
     },
-        {
+    {
       'code': '3B',
       'season': 'Spring',
       'year': '2016',
@@ -182,9 +182,90 @@ var data = {
           'code': '370'
         },
         {
-          'name': 'Introduction to Scheduling',
+          'name': 'Scheduling',
           'subject': 'CO',
           'code': '454'
+        }
+      ]
+    },
+    {
+      'code': '3B',
+      'season': 'Winter',
+      'year': '2017',
+      'courses': [
+        {
+          'name': 'Concurrent and Parallel Programming',
+          'subject': 'CS',
+          'code': '343'
+        },
+        {
+          'name': 'Distributed Systems',
+          'subject': 'CS',
+          'code': '454'
+        },
+        {
+          'name': 'Computer Networks',
+          'subject': 'CS',
+          'code': '456'
+        },
+        {
+          'name': 'Basic Human Resources Management',
+          'subject': 'HRM',
+          'code': '200'
+        }
+      ]
+    },
+    {
+      'code': '4A',
+      'season': 'Fall',
+      'year': '2017',
+      'courses': [
+        {
+          'name': 'Introduction to Game Theory',
+          'subject': 'CO',
+          'code': '456'
+        },
+        {
+          'name': 'Introduction to Artificial Intelligence',
+          'subject': 'CS',
+          'code': '486'
+        },
+        {
+          'name': 'Advanced Topics in Computer Science: Machine Learning',
+          'subject': 'CS',
+          'code': '489'
+        },
+        {
+          'name': 'Popular Music and Culture',
+          'subject': 'MUSIC',
+          'code': '140'
+        }
+      ]
+    },
+    {
+      'code': '4B',
+      'season': 'Spring',
+      'year': '2018',
+      'courses': [
+        {
+          'name': 'Introduction to Graph Theory',
+          'subject': 'CO',
+          'code': '342'
+        },
+        {
+          'name': 'Computer Security and Privacy',
+          'subject': 'CS',
+          'code': '458'
+        },
+        {
+          'name': 'Algorithm Design and Analysis',
+          'subject': 'CS',
+          'code': '466'
+        },
+        {
+          'name': 'The Superhero',
+          'subject': 'ENGL',
+          'code': '108A'
         }
       ]
     }
@@ -206,10 +287,10 @@ class EducationPage extends React.Component {
   renderHeader() {
     return (
       <div className='education-header'>
-        I'm a student in my fourth year studying at the University of
-        Waterloo, located in Waterloo, Ontario, Canada. My major is
-        Computer Science, taken with a minor in Combinatorics & Optimization
-        as well as a Business option.
+        I completed my studies at the University of Waterloo in August 2018,
+        achieving a Bachelors of Computer Science with Business Option. I
+        also completed a minor in Combinatorics & Optimization. Below is a list
+        of all the courses I took.
       </div>
     );
   }

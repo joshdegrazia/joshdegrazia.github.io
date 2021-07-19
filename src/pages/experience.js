@@ -78,9 +78,9 @@ var data = {
       'name' : 'Amazon',
       'logo' : '[amazon-logo]',
       'link' : 'http://www.amazon.com',
-      'description' : 'At Amazon, I worked on their Recruiting Experience team, which handled the internal tools that \
-                       Amazon\'s recruiters use when managing candidates and job openings. I worked primarily on their legacy \
-                       back-end system in order to clean it up and make it more usable for developers.',
+      'description' : 'At Amazon, I had the opportunity to work on both the Recruiting Experience team in Vancouver \
+                       and the FC Games team in Seattle. Both teams were fantastic opportunities to learn to develop \
+                       impactful technologies that operate at a large scale.',
       'technologies' : [
         { 'icon': 'devicons-java', 'text': 'Java' },
         { 'icon': 'devicons-amazonwebservices', 'text': 'AWS' },
@@ -88,14 +88,33 @@ var data = {
       'terms' : [
         {
           'name' : 'Summer 2017',
-          'description' : 'During my internship with Amazon, I worked primarily on the email sending portion of thier backend. Their current \
-                           email system sent way too many emails, which got very spammy for most of its users. My task was to allow \
-                           users to filter certain email types. However, implementing this was nearly impossible with how unclean their \
-                           legacy code was, so my project evolved to also include a large refactoring and restructuring task. I worked closely \
-                           with a high-level engineer on my team in order to develop a new domain for emails in our system and create a scalable, more \
-                           workable object model that would satisfy the system\'s needs in a much more versatile way.',
+          'description' : 'During my first internship with Amazon, I worked on the Recruiting Experience team. We were responsible \
+                            for managing a website which employees used to manage new candidates for Amazon. My intern project began \
+                            as an effort to offer a filtering mechanism for emails via the website, since the website sent an excess of \
+                            emails at the time, which led to users filtering everything. That task later expanded to a large refactoring task \
+                            where I worked with a senior developer to redesign email processing in the backend of the website.',
+        },
+        {
+          'name': 'Winter 2018',
+          'description': 'My second internship with Amazon was on the FC Games team, who creates gamification experiences for warehouse \
+                            associates. I implemented a scalable asset delivery system to satisfy memory management with tight hardware \
+                            restrictions, which came as a limitation of running Unity in a browser. I also redesigned and reimplemented \
+                            the main menu UI, and created a new avatar customization screen.'
         }
       ]
+    },
+    {
+      'name': 'Current',
+      'logo': '[amazon-logo]',
+      'link': 'https://www.amazon.com',
+      'description': 
+        'I currently work full-time at Amazon on the FC Games team. We deliver gamification experiences for warehouse \
+          associates to play while they work. I was promoted to SDE II in August of 2020 after leading several projects, \
+          including safely migrating a Tier-1 service off OracleDB, a new game for associates, and migrating several \
+          of the team\'s microservices to the AWS CDK. I participated in an agile scrum process, along with a 2-week \
+          oncall rotation.',
+      'technologies': [],
+      'terms': []
     }
   ]
 }
