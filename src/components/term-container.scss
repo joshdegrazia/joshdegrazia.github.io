@@ -1,0 +1,28 @@
+@use '../colors';
+
+.term-container {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: colors.$background-black;
+  color: colors.$off-white;
+  padding: 10px;
+
+  transition: color 0.2s, background-color 0.2s;
+  &:hover {
+    cursor: pointer;
+    color: colors.$background-black;
+    background-color: colors.$off-white;
+
+    transition: color 0.2s, background-color 0.2s;
+  }
+
+  &.open {
+    color: colors.$background-black;
+    background-color: colors.$off-white;
+    margin-bottom: 15px;
+  }
+  
+  .fa { float: right; }
+  .term-header { font-size: 25px; }
+  .term-description { margin-top: 10px; }
+}

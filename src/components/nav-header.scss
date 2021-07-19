@@ -1,0 +1,13 @@
+@use '../colors';
+
+.nav-header {
+  background-color: colors.$flat-grey;
+
+  .local-links {
+    list-style: none;
+
+    .header-link {
+      display: inline-block;
+    }
+  }
+}

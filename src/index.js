@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { HashRouter, Route } from "react-router-dom";
+
+import IndexPage from "./pages/index";
+import AboutPage from "./pages/about";
+import ExperiencePage from "./pages/experience";
+import ProjectsPage from "./pages/projects";
+import EducationPage from "./pages/education";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <HashRouter>
+        <Route path="/" component={IndexPage}/>
+        <Route path="/about" component={AboutPage}/>
+        <Route path="/experience" component={ExperiencePage}/>
+        <Route path="/projects" component={ProjectsPage}/>
+        <Route path="/education" component={EducationPage}/>
+      </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

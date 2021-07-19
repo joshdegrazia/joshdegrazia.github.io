@@ -1,0 +1,37 @@
+@use '../common';
+@use '../colors';
+
+.experience-page {
+  padding: 30px;
+  width: 100%;
+  
+  .title-row { margin-bottom: 10px; }
+
+  .company-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    color: colors.$off-white;
+    background-color: colors.$background-black;
+
+    .company-name { 
+      color: colors.$off-white;
+      font-size: 30px; 
+      text-decoration: none;
+    }
+
+    .fa-external-link {
+      transition: color 0.2s;
+      float: right;
+      display: inline-block;
+      text-decoration: none;
+      color: colors.$dark-grey;
+
+      &:hover {
+        transition: color 0.2s;
+        color: colors.$off-white;
+      }
+    }
+
+    .company-description { margin-bottom: 15px; }
+  } 
+}

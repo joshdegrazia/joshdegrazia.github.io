@@ -1,0 +1,30 @@
+@use '../colors';
+@use '../common';
+
+.local-link {
+  @include common.common-transition(background-color);
+
+  display: block;
+  padding: 12px 30px 12px 10px;
+
+  .link-text {
+    display: inline-block;
+    font-size: 20px;  
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  
+    .fa { margin-right: 15px; }  
+  }
+  
+  color: colors.$off-white;
+  background-color: none;
+
+  transition: color 0.2s, background-color 0.2s;
+  &:hover {
+    color: colors.$background-black;
+    background-color: colors.$off-white;
+    transition: color 0.2s, background-color 0.2s;
+  }
+}

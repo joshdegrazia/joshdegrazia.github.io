@@ -1,0 +1,73 @@
+@use '../common';
+@use '../colors';
+
+.index-root { 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('../resources/toronto.jpg');
+  background-size: 100% 100%;
+}
+
+.index-content {
+  width: 800px;
+  padding: 40px;
+  vertical-align: middle;
+  
+  background-color: rgba(41, 41, 41, 0.95); // background-black
+  color: colors.$off-white;
+
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  > div { 
+    @extend .hcenter;
+    width: 80%;
+  }
+  
+  .header-panel {
+    width: 80%;
+    border-bottom: 1px solid colors.$dark-grey;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative;
+
+    .circle-image-container {
+      margin-right: 40px;
+      margin-left: 10px;
+    }
+
+    .title-container {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      > .title { 
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      .subtitle { 
+        font-size: 20px;
+      }
+    }
+
+    > div { display: inline-block; }
+  }
+
+  .intro-description {
+    width: 70%;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .local-links-panel {
+    display: flex;
+
+    .local-link {
+      width: 50%;
+    }
+  }
+}

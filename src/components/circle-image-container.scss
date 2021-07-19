@@ -1,0 +1,20 @@
+@use '../common';
+@use '../colors';
+
+.circle-image-container {
+  img {
+    @include common.common-transition(border);
+
+    max-height: 100%;
+    max-width: 100%;
+
+    border: 3px solid colors.$dark-grey;
+    border-radius: 100%;
+
+    &:hover { 
+      @include common.common-transition(border);
+
+      border: 3px solid colors.$off-white;
+    }
+  }
+}
