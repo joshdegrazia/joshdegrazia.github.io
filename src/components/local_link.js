@@ -15,10 +15,4 @@ class LocalLink extends React.Component {
   }
 }
 
-// LocalLink.propTypes = {
-//   linkTo: React.PropTypes.string.isRequired,
-//   icon: React.PropTypes.string.isRequired,
-//   text: React.PropTypes.string.isRequired
-// }
-
 export default LocalLink;

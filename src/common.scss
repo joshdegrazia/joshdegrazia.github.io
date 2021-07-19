@@ -1,7 +1,12 @@
 @use 'colors';
 
+@import "~@fontsource/merriweather/index.css";
+@import "~@fontsource/josefin-sans/index.css";
+
 body { background-color: colors.$flat-grey; }
 div { font-family: 'Merriweather', serif; }
+
+.root { height:100%; }
 
 .title { 
   font-family: 'Josefin Sans', sans-serif;

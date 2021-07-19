@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './circle-image-container.scss';
-import TorontoSkyline from '../resources/toronto.jpg'
+import RedSelfie from '../resources/red_selfie.jpg'
 
 class CircleImageContainer extends React.Component {
   render() {
@@ -10,15 +10,10 @@ class CircleImageContainer extends React.Component {
 
     return (
       <Link to={this.props.href} className='circle-image-container'>
-        <img src={TorontoSkyline} style={imageStyle}/>
+        <img src={RedSelfie} style={imageStyle}/>
       </Link>
     );
   }
 }
-
-// CircleImageContainer.propTypes = {
-//   src: React.PropTypes.string,
-//   href: React.PropTypes.string
-// }
 
 export default CircleImageContainer;

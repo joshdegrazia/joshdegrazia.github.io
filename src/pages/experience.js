@@ -4,6 +4,8 @@ import Sidebar from '../components/sidebar';
 import LanguageLabel from '../components/language_label';
 import TermContainer from '../components/term_container';
 
+import { faPython } from '@fortawesome/free-brands-svg-icons'
+
 import '../common.scss';
 import './experience.scss';
 
@@ -19,7 +21,7 @@ var data = {
         { 'icon': 'devicons-visualstudio', 'text': 'C#' },
         { 'icon': 'devicons-java', 'text': 'Java' },
         { 'icon': 'devicons-visualstudio', 'text': 'Visual Basic' },
-        { 'icon': 'devicons-python', 'text': 'Python' },
+        { 'icon': faPython, 'text': 'Python' },
         { 'icon': 'devicons-perl', 'text': 'Perl' },
       ],
       'terms' : [
